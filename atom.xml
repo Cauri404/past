@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-12-13T13:45:01.421Z</updated>
+  <updated>2018-12-14T07:31:53.182Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,45 +17,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Cauri404</title>
-    <link href="http://yoursite.com/2018/12/13/Cauri404/"/>
-    <id>http://yoursite.com/2018/12/13/Cauri404/</id>
-    <published>2018-12-13T13:34:52.000Z</published>
-    <updated>2018-12-13T13:45:01.421Z</updated>
+    <title>踩坑总结</title>
+    <link href="http://yoursite.com/2018/12/14/%E8%B8%A9%E5%9D%91%E7%BB%88%E7%BB%93/"/>
+    <id>http://yoursite.com/2018/12/14/踩坑终结/</id>
+    <published>2018-12-14T15:06:37.000Z</published>
+    <updated>2018-12-14T07:31:53.182Z</updated>
     
-    <content type="html"><![CDATA[<p>#我也不知到写什么<br>那就这样吧</p>]]></content>
+    <content type="html"><![CDATA[<p>总结搞blog遇到的问题<br>以便以后换电脑了，不要再踩</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p> 虽然说按照官网安装就好，但是我也不知道为什么就有这么多问题呢。。。呵呵<br> 必要的应用是Node.js和git<br> 安装Node.js。。。其实没有很麻烦，下的安装包安装了以后一点反应也没有，最后只好编译安装了一次<br> （没有Arch的锅，好吧，还是我的锅）<br> Git本来就有了，就不说了<br> 然后还用到了npm<br> 中间有一个配置path的步骤，不是很记得是哪一步了，估计是用npm装HEXO的时候<br> （有一个nvm什么的吗，真的不记得了</p><h1 id="连上git"><a href="#连上git" class="headerlink" title="连上git"></a>连上git</h1><p> 本来说。。。这一步就不该有问题，但是他居然报错。<br> 仔细看了一下，连不上远程库。<br> 好吧，我知道了，开小号是我的锅，只好把小号的ssh删掉。。。</p><h1 id="然后结束了？"><a href="#然后结束了？" class="headerlink" title="然后结束了？"></a>然后结束了？</h1><p> 现在我的确可以编辑blog了，但是功能还是好少。。。<br> 不管怎么说先搞个标签。<br> 写上tags，不显示。<br> 只好又改了一堆配置文件。<br> 试图连上谷歌分析。报错。<br> 试图换主题，版本太低。<br> 试图更新，安装失败。<br> 彳亍口巴，我先凑合了。</p><p> 最后：这真是一次愉快的不务正业。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;#我也不知到写什么&lt;br&gt;那就这样吧&lt;/p&gt;
-
+        &lt;p&gt;总结搞blog遇到的问题&lt;br&gt;以便以后换电脑了，不要再踩&lt;/p&gt;
+&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;p&gt; 虽然说按照官网安装就好，但是我也不知道为什么就有这么多问题呢。。
       
     
     </summary>
     
+    
+      <category term="坑" scheme="http://yoursite.com/tags/%E5%9D%91/"/>
     
   </entry>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2018/12/13/hello-world/"/>
-    <id>http://yoursite.com/2018/12/13/hello-world/</id>
-    <published>2018-12-13T12:54:25.803Z</published>
-    <updated>2018-12-13T12:54:25.803Z</updated>
+    <title>年终了</title>
+    <link href="http://yoursite.com/2018/12/14/%E5%B9%B4%E7%BB%88%E4%BA%86/"/>
+    <id>http://yoursite.com/2018/12/14/年终了/</id>
+    <published>2018-12-14T14:14:26.000Z</published>
+    <updated>2018-12-14T07:05:12.594Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="测试语法"><a href="#测试语法" class="headerlink" title="测试语法"></a>测试语法</h1><h2 id="测试语法-1"><a href="#测试语法-1" class="headerlink" title="测试语法"></a>测试语法</h2>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;h1 id=&quot;测试语法&quot;&gt;&lt;a href=&quot;#测试语法&quot; class=&quot;headerlink&quot; title=&quot;测试语法&quot;&gt;&lt;/a&gt;测试语法&lt;/h1&gt;&lt;h2 id=&quot;测试语法-1&quot;&gt;&lt;a href=&quot;#测试语法-1&quot; class=&quot;headerlink&quot; title=&quot;测试语法&quot;
       
     
     </summary>
     
+    
+      <category term="总结" scheme="http://yoursite.com/tags/%E6%80%BB%E7%BB%93/"/>
     
   </entry>
   

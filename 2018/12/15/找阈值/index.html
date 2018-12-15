@@ -14,7 +14,7 @@
   
 
 
-<html class="theme-next muse use-motion" lang="en">
+<html class="theme-next pisces use-motion" lang="en">
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -80,7 +80,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Muse',
+    scheme: 'Pisces',
     version: '6.6.0',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: false,
@@ -112,7 +112,7 @@
 <meta property="og:site_name" content="Cauri (&#x2F;≥▽≤&#x2F;)">
 <meta property="og:description" content="3500个数字排序 结果在我的电脑上找到了：10跑了很多次都在10附近本来想做个折线图，打开表格宕机了，先拿表格凑合 遇到的问题运行程序慢效率提高不明显结果和正确答案有出入10000万溢出了100万以上没有溢出的时候都是段错误我也不知道为什么">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-12-14T14:02:42.788Z">
+<meta property="og:updated_time" content="2018-12-15T03:49:27.209Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="找阈值">
 <meta name="twitter:description" content="3500个数字排序 结果在我的电脑上找到了：10跑了很多次都在10附近本来想做个折线图，打开表格宕机了，先拿表格凑合 遇到的问题运行程序慢效率提高不明显结果和正确答案有出入10000万溢出了100万以上没有溢出的时候都是段错误我也不知道为什么">
@@ -320,9 +320,6 @@
   
 
   
-    
-
-  
 
   
 </nav>
@@ -342,6 +339,9 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
+          
+            
+
           
           <div id="content" class="content">
             
@@ -405,12 +405,24 @@
                 
               
 
-              <time title="Created: 2018-12-14 21:55:35 / Modified: 14:02:42" itemprop="dateCreated datePublished" datetime="2018-12-14T21:55:35Z">2018-12-14</time>
+              <time title="Created: 2018-12-14 21:55:35" itemprop="dateCreated datePublished" datetime="2018-12-14T21:55:35Z">2018-12-14</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2018-12-15 03:49:27" itemprop="dateModified" datetime="2018-12-15T03:49:27Z">2018-12-15</time>
               
             
           </span>
@@ -473,8 +485,8 @@
       
         <p>3500个数字排序</p>
 <h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>在我的电脑上找到了：10<br>跑了很多次都在10附近<br>本来想做个折线图，打开表格宕机了，先拿表格凑合</p>
-<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>运行程序慢<br>效率提高不明显<br>结果和正确答案有出入<br>10000万溢出了<br>100万以上没有溢出的时候都是段错误<br>我也不知道为什么<br> <a id="more"></a><br>修改了main，不用一直改数字<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">int main()&#123;</span><br><span class="line">    int array[M];</span><br><span class="line">    for(int j=50;j&gt;0;j--)&#123;</span><br><span class="line">        printf(&quot;%d:\n&quot;,j);</span><br><span class="line">    for(int i=0;i&lt;5;i++)&#123;</span><br><span class="line">        double  duration;</span><br><span class="line">        create_Ary(array,M);</span><br><span class="line">        clock_t start, finish;</span><br><span class="line">            start = clock();</span><br><span class="line">            quicksort(array,0,M,j);</span><br><span class="line">            finish = clock();</span><br><span class="line">            duration = (double)(finish - start) / CLOCKS_PER_SEC;</span><br><span class="line">            //print(array,M);</span><br><span class="line">            printf( &quot;%f seconds\n&quot;, duration );</span><br><span class="line">            //elapsed_time();</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>下面是原程序<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;time.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">#define M 5000//调整这个改变排序的数的个数</span><br><span class="line">void SelectionSort(int a[],int p,int r);//选择排序</span><br><span class="line">void create_Ary (int a[], int n);//制造随机数组</span><br><span class="line">int partition(int array[],int p,int r);//将数组分成大于某个数和小于某个数两部分</span><br><span class="line">void exchange(int *p,int *q);//交换函数</span><br><span class="line">void print(int array[],int len);//打印数组元素</span><br><span class="line">void quicksort(int array[],int p,int r);//快速排序</span><br><span class="line">int main()&#123;</span><br><span class="line">    int array[M];</span><br><span class="line">    double  duration;</span><br><span class="line">    create_Ary(array,M);</span><br><span class="line">    clock_t start, finish;</span><br><span class="line">    start = clock();</span><br><span class="line">    quicksort(array,0,M);</span><br><span class="line">    finish = clock();</span><br><span class="line">    duration = (double)(finish - start) / CLOCKS_PER_SEC;</span><br><span class="line">    //print(array,M);</span><br><span class="line">    printf( &quot;%f seconds\n&quot;, duration );</span><br><span class="line">    //elapsed_time();</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br><span class="line">void quicksort(int array[],int p,int r)&#123;</span><br><span class="line">    int q=0;</span><br><span class="line">    if(r-p&lt;20)&#123;</span><br><span class="line">        SelectionSort(array,p,r);</span><br><span class="line">    &#125;</span><br><span class="line">    else&#123;</span><br><span class="line">        if(p&lt;r)&#123;</span><br><span class="line">            q=partition(array,p,r);</span><br><span class="line">            quicksort(array,p,q);</span><br><span class="line">            quicksort(array,q+1,r);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">int partition(int array[],int p,int r)&#123;</span><br><span class="line">    int x=array[r-1];</span><br><span class="line">    int i=p-1;</span><br><span class="line">    for(int j=p;j&lt;r-1;j++)&#123;//最后一个数内定了</span><br><span class="line">        if(array[j]&lt;=x)&#123;</span><br><span class="line">            exchange(&amp;array[i+1],&amp;array[j]);</span><br><span class="line">            i+=1;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    exchange(&amp;array[i+1],&amp;array[r-1]);</span><br><span class="line">    i++;</span><br><span class="line">    return i;</span><br><span class="line">&#125;</span><br><span class="line">void exchange(int *p,int *q)&#123;</span><br><span class="line">    int t=*p;</span><br><span class="line">    *p=*q;</span><br><span class="line">    *q=t;</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br><span class="line">void print(int array[],int len)&#123;</span><br><span class="line">    for(int i=0;i&lt;len;i++)&#123;</span><br><span class="line">        printf(&quot;%d &quot;,array[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    return;</span><br><span class="line">&#125;</span><br><span class="line">void elapsed_time()&#123;</span><br><span class="line">    printf(&quot;Elapsed time:%lu secs.\n&quot;,clock()/CLOCKS_PER_SEC);</span><br><span class="line">&#125;</span><br><span class="line">void create_Ary (int a[], int n)</span><br><span class="line">&#123;</span><br><span class="line">    srand(time(0)); //使随机数函数 rand 产生一序列随机数而设置种子值</span><br><span class="line">    int i,j,x;</span><br><span class="line">    i = 0;</span><br><span class="line">    while (i&lt;n)</span><br><span class="line">    &#123;</span><br><span class="line">        x=rand( );</span><br><span class="line">        if (x&gt;=10000) //产生两位在 10≤而&lt;100 范围内的数</span><br><span class="line">        continue;</span><br><span class="line">        j=0;</span><br><span class="line">        while (j&lt;=i&amp;&amp;a[j]!=x) //舍弃相同元素</span><br><span class="line">        j++;</span><br><span class="line">        if (j&gt;i)a[i++]=x; //不同的元素送入数组</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">void SelectionSort(int a[],int p,int r)&#123;</span><br><span class="line">    int i,j;</span><br><span class="line">    for(i = p ; i &lt; r-1 ; i++)&#123;</span><br><span class="line">        int min_index = i;</span><br><span class="line">        for(j = i + 1 ; j &lt; r; j++)</span><br><span class="line">            if(a[ min_index ] &gt; a[j])</span><br><span class="line">                min_index = j;</span><br><span class="line">        if(min_index != i)&#123;</span><br><span class="line">            int temp = a[i];</span><br><span class="line">            a[i] = a[min_index];</span><br><span class="line">            a[min_index] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><p>运行程序慢<br>效率提高不明显<br>结果和正确答案有出入<br>10000万溢出了<br>100万以上没有溢出的时候都是段错误<br>我也不知道为什么<br> <a id="more"></a><br>修改了main，不用一直改数字<br> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">array</span>[M];</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">50</span>;j&gt;<span class="number">0</span>;j--)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d:\n"</span>,j);</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;<span class="number">5</span>;i++)&#123;</span><br><span class="line">        <span class="keyword">double</span>  duration;</span><br><span class="line">        create_Ary(<span class="built_in">array</span>,M);</span><br><span class="line">        <span class="keyword">clock_t</span> start, finish;</span><br><span class="line">            start = clock();</span><br><span class="line">            quicksort(<span class="built_in">array</span>,<span class="number">0</span>,M,j);</span><br><span class="line">            finish = clock();</span><br><span class="line">            duration = (<span class="keyword">double</span>)(finish - start) / CLOCKS_PER_SEC;</span><br><span class="line">            <span class="comment">//print(array,M);</span></span><br><span class="line">            <span class="built_in">printf</span>( <span class="string">"%f seconds\n"</span>, duration );</span><br><span class="line">            <span class="comment">//elapsed_time();</span></span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>下面是原程序<br> <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;time.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> M 5000<span class="comment">//调整这个改变排序的数的个数</span></span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectionSort</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> p,<span class="keyword">int</span> r)</span></span>;<span class="comment">//选择排序</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">create_Ary</span> <span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span></span>;<span class="comment">//制造随机数组</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> p,<span class="keyword">int</span> r)</span></span>;<span class="comment">//将数组分成大于某个数和小于某个数两部分</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">exchange</span><span class="params">(<span class="keyword">int</span> *p,<span class="keyword">int</span> *q)</span></span>;<span class="comment">//交换函数</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> len)</span></span>;<span class="comment">//打印数组元素</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quicksort</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> p,<span class="keyword">int</span> r)</span></span>;<span class="comment">//快速排序</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> <span class="built_in">array</span>[M];</span><br><span class="line">    <span class="keyword">double</span>  duration;</span><br><span class="line">    create_Ary(<span class="built_in">array</span>,M);</span><br><span class="line">    <span class="keyword">clock_t</span> start, finish;</span><br><span class="line">    start = clock();</span><br><span class="line">    quicksort(<span class="built_in">array</span>,<span class="number">0</span>,M);</span><br><span class="line">    finish = clock();</span><br><span class="line">    duration = (<span class="keyword">double</span>)(finish - start) / CLOCKS_PER_SEC;</span><br><span class="line">    <span class="comment">//print(array,M);</span></span><br><span class="line">    <span class="built_in">printf</span>( <span class="string">"%f seconds\n"</span>, duration );</span><br><span class="line">    <span class="comment">//elapsed_time();</span></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">quicksort</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> p,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> q=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">if</span>(r-p&lt;<span class="number">20</span>)&#123;</span><br><span class="line">        SelectionSort(<span class="built_in">array</span>,p,r);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(p&lt;r)&#123;</span><br><span class="line">            q=partition(<span class="built_in">array</span>,p,r);</span><br><span class="line">            quicksort(<span class="built_in">array</span>,p,q);</span><br><span class="line">            quicksort(<span class="built_in">array</span>,q+<span class="number">1</span>,r);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">partition</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> p,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> x=<span class="built_in">array</span>[r<span class="number">-1</span>];</span><br><span class="line">    <span class="keyword">int</span> i=p<span class="number">-1</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> j=p;j&lt;r<span class="number">-1</span>;j++)&#123;<span class="comment">//最后一个数内定了</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">array</span>[j]&lt;=x)&#123;</span><br><span class="line">            exchange(&amp;<span class="built_in">array</span>[i+<span class="number">1</span>],&amp;<span class="built_in">array</span>[j]);</span><br><span class="line">            i+=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    exchange(&amp;<span class="built_in">array</span>[i+<span class="number">1</span>],&amp;<span class="built_in">array</span>[r<span class="number">-1</span>]);</span><br><span class="line">    i++;</span><br><span class="line">    <span class="keyword">return</span> i;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">exchange</span><span class="params">(<span class="keyword">int</span> *p,<span class="keyword">int</span> *q)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t=*p;</span><br><span class="line">    *p=*q;</span><br><span class="line">    *q=t;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">(<span class="keyword">int</span> <span class="built_in">array</span>[],<span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;len;i++)&#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"%d "</span>,<span class="built_in">array</span>[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">elapsed_time</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"Elapsed time:%lu secs.\n"</span>,clock()/CLOCKS_PER_SEC);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">create_Ary</span> <span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    srand(time(<span class="number">0</span>)); <span class="comment">//使随机数函数 rand 产生一序列随机数而设置种子值</span></span><br><span class="line">    <span class="keyword">int</span> i,j,x;</span><br><span class="line">    i = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">while</span> (i&lt;n)</span><br><span class="line">    &#123;</span><br><span class="line">        x=rand( );</span><br><span class="line">        <span class="keyword">if</span> (x&gt;=<span class="number">10000</span>) <span class="comment">//产生两位在 10≤而&lt;100 范围内的数</span></span><br><span class="line">        <span class="keyword">continue</span>;</span><br><span class="line">        j=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (j&lt;=i&amp;&amp;a[j]!=x) <span class="comment">//舍弃相同元素</span></span><br><span class="line">        j++;</span><br><span class="line">        <span class="keyword">if</span> (j&gt;i)a[i++]=x; <span class="comment">//不同的元素送入数组</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectionSort</span><span class="params">(<span class="keyword">int</span> a[],<span class="keyword">int</span> p,<span class="keyword">int</span> r)</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i,j;</span><br><span class="line">    <span class="keyword">for</span>(i = p ; i &lt; r<span class="number">-1</span> ; i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> min_index = i;</span><br><span class="line">        <span class="keyword">for</span>(j = i + <span class="number">1</span> ; j &lt; r; j++)</span><br><span class="line">            <span class="keyword">if</span>(a[ min_index ] &gt; a[j])</span><br><span class="line">                min_index = j;</span><br><span class="line">        <span class="keyword">if</span>(min_index != i)&#123;</span><br><span class="line">            <span class="keyword">int</span> temp = a[i];</span><br><span class="line">            a[i] = a[min_index];</span><br><span class="line">            a[min_index] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -655,10 +667,50 @@
           
 
           
-
+            <div class="links-of-author motion-element">
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="https://github.com/cauri404" title="GitHub &rarr; https://github.com/cauri404" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+                </span>
+              
+                <span class="links-of-author-item">
+                  
+                  
+                    
+                  
+                  
+                    
+                  
+                  <a href="mailto:scnu.cauri@gmail.com" title="E-Mail &rarr; mailto:scnu.cauri@gmail.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                </span>
+              
+            </div>
           
 
           
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://Lucelia-L.github.io" title="https://Lucelia-L.github.io" rel="noopener" target="_blank">荷花花~</a>
+                  </li>
+                
+              </ul>
+            </div>
           
 
           
@@ -719,7 +771,7 @@
 
 
 
-  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> v6.6.0</div>
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v6.6.0</div>
 
 
 
@@ -772,9 +824,18 @@
 
 
 
+  
+    
+      
+  
+  <script color="0,0,0" opacity="0.5" zindex="0" count="99" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
 
+
+
+  
+  
 
 
 
@@ -799,6 +860,16 @@
     <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   
 
+  
+  
+    <script src="/lib/three/three.min.js"></script>
+  
+
+  
+  
+    <script src="/lib/three/canvas_lines.min.js"></script>
+  
+
 
   
 
@@ -811,6 +882,13 @@
 
   
   
+
+
+  <script src="/js/src/affix.js?v=6.6.0"></script>
+
+  <script src="/js/src/schemes/pisces.js?v=6.6.0"></script>
+
+
 
   
   <script src="/js/src/scrollspy.js?v=6.6.0"></script>

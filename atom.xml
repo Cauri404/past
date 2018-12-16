@@ -72,41 +72,6 @@
   </entry>
   
   <entry>
-    <title>10-四个基本子空间</title>
-    <link href="http://yoursite.com/2018/12/14/10-%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E5%AD%90%E7%A9%BA%E9%97%B4/"/>
-    <id>http://yoursite.com/2018/12/14/10-四个基本子空间/</id>
-    <published>2018-12-14T14:14:26.000Z</published>
-    <updated>2018-12-14T12:24:01.768Z</updated>
-    
-    <content type="html"><![CDATA[<p>四个基本子空间包括了：A的列空间和零空间，A转置的列空间（行空间）和零空间（左零空间）。<br>同时行线性相关等同于列线性相关。（如何联系列行空间）</p>
-<h2 id="列空间"><a href="#列空间" class="headerlink" title="列空间"></a>列空间</h2><p>假设有一个m*n的A矩阵<br>列空间是属于R^m的（一列有m个分量）<br>他的秩为r</p>
-<h2 id="零空间"><a href="#零空间" class="headerlink" title="零空间"></a>零空间</h2><p>属于R^n,显然解有n个分量。<br>  <a id="more"></a><br>秩为n-r</p>
-<h2 id="行空间"><a href="#行空间" class="headerlink" title="行空间"></a>行空间</h2><p>属于R^n就是转置的列空间<br>秩为r</p>
-<h2 id="左零空间（二等公民？）"><a href="#左零空间（二等公民？）" class="headerlink" title="左零空间（二等公民？）"></a>左零空间（二等公民？）</h2><p>属于R^m<br>秩为m-r</p>
-<h2 id="著名的基本子空间关系图"><a href="#著名的基本子空间关系图" class="headerlink" title="著名的基本子空间关系图"></a>著名的基本子空间关系图</h2><p>找书去吧<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">显然同属R^n的两个子空间的秩的和为n，而R^m的为m.</span><br></pre></td></tr></table></figure></p>
-<h2 id="理解空间"><a href="#理解空间" class="headerlink" title="理解空间"></a>理解空间</h2><p>找到他们的基</p>
-<h3 id="行空间-1"><a href="#行空间-1" class="headerlink" title="行空间"></a>行空间</h3><p>例子$$\begin{bmatrix}1 &amp; 2 &amp;  3\1 &amp; 2 &amp; 3 \2 &amp; 5&amp; 8   \\end{bmatrix}$$<br>首先C（R）！=C（A）<br>行变化不会改变行空间但会改变列空间。<br>行空间的基是简化阶梯型的前r行，既行空间最佳的基。</p>
-<h3 id="左零空间"><a href="#左零空间" class="headerlink" title="左零空间"></a>左零空间</h3><p>为了方便表达，说A^T<em>y=0<br>也就是说y^T</em>A=0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">高斯-若尔消元</span><br><span class="line">EA=R（E是消元矩阵）</span><br><span class="line">写成E[A I](A是m*n，I是m*m)-&gt;[R E]</span><br><span class="line">EI=E EA=R</span><br><span class="line">如果R=I</span><br><span class="line">E=A^(-1)(这种情况A才可逆)</span><br></pre></td></tr></table></figure></p>
-<p>如何求左零空间的基<br>找一个能生成0行向量的组合（左乘一个消元矩阵）<br>R零行对应的消元矩阵的行就是基的向量。（这一行乘矩阵得到0）<br>$$\begin{bmatrix}-1 &amp; 2 &amp;  0\1 &amp; -1 &amp; 0 \-1 &amp; 0&amp; 1   \\end{bmatrix}\begin{bmatrix}1 &amp; 2 &amp;  3&amp;1\1 &amp; 2 &amp; 3&amp;1 \1 &amp; 2&amp; 3&amp;1   \\end{bmatrix}=\begin{bmatrix}1 &amp; 0 &amp;  1&amp;1\0 &amp; 1 &amp; 1&amp;0 \0 &amp; 0&amp; 0&amp;0   \\end{bmatrix}$$<br>在这个例子里很容易看出来</p>
-<h2 id="New-vector-space"><a href="#New-vector-space" class="headerlink" title="New vector space"></a>New vector space</h2><p>将矩阵看成向量，进行加减和数乘运算（不考虑矩阵乘法），得到一种新的空间</p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;四个基本子空间包括了：A的列空间和零空间，A转置的列空间（行空间）和零空间（左零空间）。&lt;br&gt;同时行线性相关等同于列线性相关。（如何联系列行空间）&lt;/p&gt;
-&lt;h2 id=&quot;列空间&quot;&gt;&lt;a href=&quot;#列空间&quot; class=&quot;headerlink&quot; title=&quot;列空间&quot;&gt;&lt;/a&gt;列空间&lt;/h2&gt;&lt;p&gt;假设有一个m*n的A矩阵&lt;br&gt;列空间是属于R^m的（一列有m个分量）&lt;br&gt;他的秩为r&lt;/p&gt;
-&lt;h2 id=&quot;零空间&quot;&gt;&lt;a href=&quot;#零空间&quot; class=&quot;headerlink&quot; title=&quot;零空间&quot;&gt;&lt;/a&gt;零空间&lt;/h2&gt;&lt;p&gt;属于R^n,显然解有n个分量。&lt;br&gt;
-    
-    </summary>
-    
-      <category term="线性代数" scheme="http://yoursite.com/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
-    
-    
-      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>11-矩阵空间、秩一矩阵</title>
     <link href="http://yoursite.com/2018/12/14/11-%E7%9F%A9%E9%98%B5%E7%A9%BA%E9%97%B4%E3%80%81%E7%A7%A9%E4%B8%80%E7%9F%A9%E9%98%B5/"/>
     <id>http://yoursite.com/2018/12/14/11-矩阵空间、秩一矩阵/</id>
@@ -131,6 +96,41 @@
     
       &lt;h2 id=&quot;矩阵空间&quot;&gt;&lt;a href=&quot;#矩阵空间&quot; class=&quot;headerlink&quot; title=&quot;矩阵空间&quot;&gt;&lt;/a&gt;矩阵空间&lt;/h2&gt;&lt;p&gt;M为所有3&lt;em&gt;3矩阵（举个3&lt;/em&gt;3例子）&lt;br&gt;他的子空间有什么呢？&lt;br&gt;1.对称矩阵&lt;br&gt;2.上三角矩阵&lt;br&gt;3.对角矩阵&lt;br&gt;这个空间的基向量一共有9个（把一个全是0的三乘三矩阵从第一行第一列开始写1，每个向量只有一个1…….）&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;难以理解的一个地方：这是个怎么样的空间？（还有矩阵为什么可以作为向量？）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;按照向量空间的定义，满足加法乘法封闭，包括了0向量......&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;尝试写几个矩阵进行加减和数乘运算，满足了以上条件（好吧我接受他是个子空间了）&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;但是这个空间是个什么样子呢......&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1.对称矩阵的基有6个向量（S）&lt;br&gt;2.上三角矩阵的基有6个向量（U）&lt;br&gt;3.对角矩阵的基有3个向量（前两个的交集）&lt;br&gt;我怎么知道有几个呢，从M的九个基里找，如果加起来刚好是某个矩阵，就是基了。对，没错，就是矩阵加法。&lt;br&gt;S∩U=diagond 3&lt;em&gt;3&lt;br&gt;d(S∩U)=3&lt;br&gt;SUU不是一个子空间（并和加？？？ [^谷歌的答案] ），就像一条直线插在一个平面上（哪里不对……）&lt;br&gt;但是S+U是&lt;br&gt;
+    
+    </summary>
+    
+      <category term="线性代数" scheme="http://yoursite.com/categories/%E7%BA%BF%E6%80%A7%E4%BB%A3%E6%95%B0/"/>
+    
+    
+      <category term="笔记" scheme="http://yoursite.com/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>10-四个基本子空间</title>
+    <link href="http://yoursite.com/2018/12/14/10-%E5%9B%9B%E4%B8%AA%E5%9F%BA%E6%9C%AC%E5%AD%90%E7%A9%BA%E9%97%B4/"/>
+    <id>http://yoursite.com/2018/12/14/10-四个基本子空间/</id>
+    <published>2018-12-14T14:14:26.000Z</published>
+    <updated>2018-12-14T12:24:01.768Z</updated>
+    
+    <content type="html"><![CDATA[<p>四个基本子空间包括了：A的列空间和零空间，A转置的列空间（行空间）和零空间（左零空间）。<br>同时行线性相关等同于列线性相关。（如何联系列行空间）</p>
+<h2 id="列空间"><a href="#列空间" class="headerlink" title="列空间"></a>列空间</h2><p>假设有一个m*n的A矩阵<br>列空间是属于R^m的（一列有m个分量）<br>他的秩为r</p>
+<h2 id="零空间"><a href="#零空间" class="headerlink" title="零空间"></a>零空间</h2><p>属于R^n,显然解有n个分量。<br>  <a id="more"></a><br>秩为n-r</p>
+<h2 id="行空间"><a href="#行空间" class="headerlink" title="行空间"></a>行空间</h2><p>属于R^n就是转置的列空间<br>秩为r</p>
+<h2 id="左零空间（二等公民？）"><a href="#左零空间（二等公民？）" class="headerlink" title="左零空间（二等公民？）"></a>左零空间（二等公民？）</h2><p>属于R^m<br>秩为m-r</p>
+<h2 id="著名的基本子空间关系图"><a href="#著名的基本子空间关系图" class="headerlink" title="著名的基本子空间关系图"></a>著名的基本子空间关系图</h2><p>找书去吧<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">显然同属R^n的两个子空间的秩的和为n，而R^m的为m.</span><br></pre></td></tr></table></figure></p>
+<h2 id="理解空间"><a href="#理解空间" class="headerlink" title="理解空间"></a>理解空间</h2><p>找到他们的基</p>
+<h3 id="行空间-1"><a href="#行空间-1" class="headerlink" title="行空间"></a>行空间</h3><p>例子$$\begin{bmatrix}1 &amp; 2 &amp;  3\1 &amp; 2 &amp; 3 \2 &amp; 5&amp; 8   \\end{bmatrix}$$<br>首先C（R）！=C（A）<br>行变化不会改变行空间但会改变列空间。<br>行空间的基是简化阶梯型的前r行，既行空间最佳的基。</p>
+<h3 id="左零空间"><a href="#左零空间" class="headerlink" title="左零空间"></a>左零空间</h3><p>为了方便表达，说A^T<em>y=0<br>也就是说y^T</em>A=0<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">高斯-若尔消元</span><br><span class="line">EA=R（E是消元矩阵）</span><br><span class="line">写成E[A I](A是m*n，I是m*m)-&gt;[R E]</span><br><span class="line">EI=E EA=R</span><br><span class="line">如果R=I</span><br><span class="line">E=A^(-1)(这种情况A才可逆)</span><br></pre></td></tr></table></figure></p>
+<p>如何求左零空间的基<br>找一个能生成0行向量的组合（左乘一个消元矩阵）<br>R零行对应的消元矩阵的行就是基的向量。（这一行乘矩阵得到0）<br>$$\begin{bmatrix}-1 &amp; 2 &amp;  0\1 &amp; -1 &amp; 0 \-1 &amp; 0&amp; 1   \\end{bmatrix}\begin{bmatrix}1 &amp; 2 &amp;  3&amp;1\1 &amp; 2 &amp; 3&amp;1 \1 &amp; 2&amp; 3&amp;1   \\end{bmatrix}=\begin{bmatrix}1 &amp; 0 &amp;  1&amp;1\0 &amp; 1 &amp; 1&amp;0 \0 &amp; 0&amp; 0&amp;0   \\end{bmatrix}$$<br>在这个例子里很容易看出来</p>
+<h2 id="New-vector-space"><a href="#New-vector-space" class="headerlink" title="New vector space"></a>New vector space</h2><p>将矩阵看成向量，进行加减和数乘运算（不考虑矩阵乘法），得到一种新的空间</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;四个基本子空间包括了：A的列空间和零空间，A转置的列空间（行空间）和零空间（左零空间）。&lt;br&gt;同时行线性相关等同于列线性相关。（如何联系列行空间）&lt;/p&gt;
+&lt;h2 id=&quot;列空间&quot;&gt;&lt;a href=&quot;#列空间&quot; class=&quot;headerlink&quot; title=&quot;列空间&quot;&gt;&lt;/a&gt;列空间&lt;/h2&gt;&lt;p&gt;假设有一个m*n的A矩阵&lt;br&gt;列空间是属于R^m的（一列有m个分量）&lt;br&gt;他的秩为r&lt;/p&gt;
+&lt;h2 id=&quot;零空间&quot;&gt;&lt;a href=&quot;#零空间&quot; class=&quot;headerlink&quot; title=&quot;零空间&quot;&gt;&lt;/a&gt;零空间&lt;/h2&gt;&lt;p&gt;属于R^n,显然解有n个分量。&lt;br&gt;
     
     </summary>
     

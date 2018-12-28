@@ -3,11 +3,13 @@ Allow: /
 Allow: /archives/
 Allow: /categories/
 Allow: /tags/ 
+
 Disallow: /vendors/
 Disallow: /js/
 Disallow: /css/
 Disallow: /fonts/
 Disallow: /vendors/
 Disallow: /fancybox/
+
 Sitemap: http://cauri404.github.io/sitemap.xml
 Sitemap: http://cauri404.github.io/baidusitemap.xml

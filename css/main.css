@@ -1860,7 +1860,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aa7de9;
+  background: #ffa81a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2995,7 +2995,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("/images/avatar.jpg");
+  background: url("/images/background.jpg");
   background-size: cover;
   background-repeat: repeat;
   background-attachment: fixed;
